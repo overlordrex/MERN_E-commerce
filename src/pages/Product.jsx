@@ -32,7 +32,7 @@ const Product = () => {
     const getProduct = async () => {
       try {
         const { data } = await axios.get(
-          `https://opes-clothes.herokuapp.com/api/products/find/${id}`
+          `https://opes-store.herokuapp.com/api/products/find/${id}`
         );
         setProduct(data);
       } catch (err) {

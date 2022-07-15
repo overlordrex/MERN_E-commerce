@@ -11,7 +11,7 @@ const SimilarProducts = ({ cat }) => {
       try {
         const { data } = await axios.get(
           cat &&
-            `https://opes-clothes.herokuapp.com/api/products?category=${cat[0]}`
+            `https://opes-store.herokuapp.com/api/products?category=${cat[0]}`
         );
         setSimilarProducts(data);
       } catch (error) {

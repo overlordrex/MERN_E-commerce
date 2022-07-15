@@ -17,8 +17,7 @@ const User = () => {
       const getOrder = async () => {
         try {
           const { data } = await axios.get(
-            user &&
-              `https://opes-clothes.herokuapp.com/api/orders/find/${userId}`
+            user && `https://opes-store.herokuapp.com/api/orders/find/${userId}`
           );
           setUserOrder(data);
         } catch (err) {

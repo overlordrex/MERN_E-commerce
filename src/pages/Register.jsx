@@ -13,7 +13,7 @@ const Register = () => {
     e.preventDefault();
     if (password === repeatPassword) {
       const { data } = await axios.post(
-        'https://opes-clothes.herokuapp.com/api/auth/register',
+        'https://opes-store.herokuapp.com/api/auth/register',
         { username, email, password }
       );
       console.log(data);

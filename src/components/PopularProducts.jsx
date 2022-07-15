@@ -11,7 +11,7 @@ const PopularProducts = () => {
     const getProducts = async () => {
       try {
         const { data } = await axios.get(
-          'https://opes-clothes.herokuapp.com/api/products'
+          'https://opes-store.herokuapp.com/api/products'
         );
         setPopularProducts(data);
       } catch (err) {

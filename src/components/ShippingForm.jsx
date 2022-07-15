@@ -49,7 +49,7 @@ const ShippingForm = ({ price, quantity, product, pay, setPay }) => {
     } else {
       try {
         const { data } = await axios.post(
-          `https://opes-clothes.herokuapp.com/api/orders`,
+          `https://opes-store.herokuapp.com/api/orders`,
           {
             userId,
             state,

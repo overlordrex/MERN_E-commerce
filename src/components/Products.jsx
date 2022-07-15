@@ -10,8 +10,8 @@ const Products = ({ cat }) => {
       try {
         const { data } = await axios.get(
           cat
-            ? `https://opes-clothes.herokuapp.com/api/products?category=${cat}`
-            : 'https://opes-clothes.herokuapp.com/api/products'
+            ? `https://opes-store.herokuapp.com/api/products?category=${cat}`
+            : 'https://opes-store.herokuapp.com/api/products'
         );
         setProducts(data);
       } catch (err) {

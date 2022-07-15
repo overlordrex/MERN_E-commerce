@@ -18,7 +18,7 @@ const Login = () => {
 
     try {
       const { data } = await axios.post(
-        'https://opes-clothes.herokuapp.com/api/auth/login',
+        'https://opes-store.herokuapp.com/api/auth/login',
         { username, password }
       );
       dispatch(loginSucess(data));
