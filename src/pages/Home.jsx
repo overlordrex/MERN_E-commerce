@@ -10,7 +10,6 @@ const Home = () => {
     <div className=" w-full">
       <Navbar />
       <br />
-      <br />
       <PopularProducts />
       <Categories />
       <div className=" pl-4 font-semibold mb-2 capitalize text-[1.3rem]">
